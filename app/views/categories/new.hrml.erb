@@ -1,0 +1,9 @@
+<h1>ADD A NEW CATEGORY</h1>
+
+<% @cateogry.errors.full_messages.each do |message| %>
+<p>
+  <%= message %>
+</p>
+<% end %>
+
+<%= render 'form' %>

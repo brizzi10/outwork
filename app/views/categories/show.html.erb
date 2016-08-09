@@ -1,0 +1,14 @@
+<h1><%= @category.name.upcase %></h1>
+<p>
+  <%= link_to "Edit/Delete", edit_category_path %>
+</p>
+
+<img src="<%= @category.image_url %>" />
+
+<h1>DRILLS</h1>
+
+<% @category.drills.each do |drill| %>
+  <h2><%= link_to drill.name, category_drill_path(@category, drill) %></h2>
+<% end %>
+
+<%= link_to "+", new_category_drill_path(@category) %>

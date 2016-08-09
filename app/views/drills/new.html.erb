@@ -1,0 +1,9 @@
+<h1>ADD A NEW DRILL</h1>
+
+<% @drill.errors.full_messages.each do |message| %>
+<p>
+  <%= message %>
+</p>
+<% end %>
+
+<%= render 'form' %>
