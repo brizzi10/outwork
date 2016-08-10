@@ -1,3 +1,4 @@
 class User < ActiveRecord::Base
-  has_many :drills
+  has_many :workouts
+  has_many :drills, through: :workouts
 end

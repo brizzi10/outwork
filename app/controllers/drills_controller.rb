@@ -44,6 +44,21 @@ class DrillsController < ApplicationController
     redirect_to category_path(@category), alert: "Drill deleted"
   end
 
+  def add_workout
+    @drill = Drill.find(params[:id])
+    @category = @drill.category
+    @drill.workouts.create(user: current_user)
+    redirect_to category_path(@category)
+  end
+
+  def remove_workout
+    @drill = Drill.find(params[:id])
+    @category = @drill.category
+    @drill.workouts.create(user: current_user)
+    redirect_to category_path(@category)
+  end
+
+
   private
 
   def create_drill
