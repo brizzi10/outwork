@@ -1,1 +1,12 @@
 <h2><%= @user.username %> <%= link_to "(edit)", edit_user_path(@user) %></h2>
+<% @user.workouts.each do |workout| %>
+  <div class= "comment">
+  <h2><%= link_to "#{workout.drill.name}:", category_drill_path(workout.drill.category, workout.drill) %></h2>
+  <p><%=workout.comment %></p>
+    <%= form_for workout, url: workout_path(workout) do |f| %>
+      <%= f.text_area :comment %>
+      <%= f.submit %>
+      <% end %>
+  </div>    
+
+<% end %>

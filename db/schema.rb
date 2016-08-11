@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20160810130748) do
   end
 
   create_table "workouts", force: :cascade do |t|
-    t.string   "comment",    null: false
+    t.string   "comment"
     t.integer  "user_id"
     t.integer  "drill_id"
     t.datetime "created_at", null: false

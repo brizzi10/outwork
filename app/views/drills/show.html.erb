@@ -1,6 +1,15 @@
 <h1><%= @drill.name %></h1>
+<% @drill.name %>
 <p>
   <%= link_to "Edit/Delete", edit_category_drill_path(@category, @drill)%>
 </p>
+<div class= "center">
 <img src="<%= @drill.image_url %>" />
 <h3><%= @drill.description %></h3>
+
+<%= form_for @workout, url: workouts_path, method: :post do |f|%>
+  <%= f.hidden_field :drill_id, :value => @drill.id %>
+  <%= f.hidden_field :user_id, :value => @current_user.id %>
+  <%= f.submit "Add This Drill" %>
+  </div>
+<% end %>

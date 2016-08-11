@@ -7,17 +7,22 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 def get_category_data
   category_data = {
+    "Defense" => {
+                    name: "Defense",
+                    image_url: "http://learntocoachbasketball.com/wp-content/uploads/2016/02/youth-basketball-drills.jpg"
+                  },
+
     "Ball Handling" => {
                     name: "Ball Handling",
                     image_url: "http://www.mccrackencamps.com/assets/programs/IMG_0680-001.JPG"
                   },
     "Shooting" => {
                     name: "Shooting",
-                    image_url: "http://upl.stack.com/wp-content/uploads/Perfect-Your-Shooting-Form-With-The-Electronic-Basketball-Shooting-Coach-629x685.jpg"
+                    image_url: "http://upl.stack.com/wp-content/uploads/2013/08/Basketball-Shooting-Drill-629x463.jpg"
                   },
     "1 on 1 Moves" => {
                     name: "1 on 1 Moves",
-                    image_url: "https://pbs.twimg.com/media/Bz4GaaKCEAAX46b.jpg",
+                    image_url: "http://images4.fanpop.com/image/quiz/505000/505203_1291552050962_360_240.jpg",
                   },
     "Post Moves" => {
                     name: "Post Moves",

@@ -1,15 +1,96 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+    background-image: url("http://wallpapercave.com/wp/pdUdA3Q.jpg");
+    background-attachment: fixed;
+    background-size: 100% auto;
+}
+
+p{
+  text-align: center;
+  color: white;
+}
+
+img {
+  border-radius: 8px;
+  height: 200px;
+  width: 300px;
+  margin: 0 auto;
+}
+h1 {
+  color: white;
+  text-align: center;
+  font-family: 'Vollkorn', serif;
+}
+h2 {
+  color: white;
+  text-align: center;
+  font-family: 'Vollkorn', serif;
+}
+h3 {
+  color: white;
+  text-align: center;
+  font-family: 'Vollkorn', serif;
+}
+label {
+  color: white;
+  text-align: center;
+  font-family: 'Vollkorn', serif;
+}
+nav{
+  text-align: center;
+}
+a:link {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: rgb(186, 132, 28);
+}
+
+.alert{
+  color:#f00;
+}
+.notice{
+  color:#00f;
+}
+
+.shell {
+  width: 1000px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.center {
+    display: block;
+    margin: auto;
+    width: 22%;
+}
+
+.container {
+  display: inline-block;
+  position: relative;
+  font-family: 'Jura', sans-serif;
+  color: white;
+  padding: 10px;
+}
+
+.labelContainer{
+  text-align: center;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 40px;
+    right: 16px;
+    font-size: 18px;
+}
+
+.comment{
+  display: inline;
+  text-align: center;
+}

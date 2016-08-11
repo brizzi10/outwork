@@ -8,6 +8,7 @@ class DrillsController < ApplicationController
   def show
     @category = Category.find(params[:category_id])
     @drill = @category.drills.find(params[:id])
+    @workout = Workout.new
   end
 
   def create
@@ -47,14 +48,14 @@ class DrillsController < ApplicationController
   def add_workout
     @drill = Drill.find(params[:id])
     @category = @drill.category
-    @drill.workouts.create(user: current_user)
+    @drill.workouts.create(user: @current_user)
     redirect_to category_path(@category)
   end
 
   def remove_workout
     @drill = Drill.find(params[:id])
     @category = @drill.category
-    @drill.workouts.create(user: current_user)
+    @drill.workouts.create(user: @current_user)
     redirect_to category_path(@category)
   end
 

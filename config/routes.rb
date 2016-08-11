@@ -5,6 +5,7 @@ Rails.application.routes.draw do
   end
   resources :users
   resource  :session
+  resources :workouts
 
   root "categories#index"
 
